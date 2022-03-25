@@ -34,14 +34,14 @@ class FormularioTransferenciaState extends State<FormularioTransferencia> {
         child: Column(
           children: [
             Editor(
-              controlador: _controladorCampoNumeroConta,
-              rotulo: _rotuloCampoNumeroConta,
-              dica: _dicaCampoNumeroConta,
+              controller: _controladorCampoNumeroConta,
+              labelText: _rotuloCampoNumeroConta,
+              hintText: _dicaCampoNumeroConta,
             ),
             Editor(
-              controlador: _controladorCampoValor,
-              rotulo: _rotuloCampoValor ,
-              dica: _dicaCampoValor,
+              controller: _controladorCampoValor,
+              labelText: _rotuloCampoValor ,
+              hintText: _dicaCampoValor,
               icone: Icons.monetization_on,
             ),
             ElevatedButton(
