@@ -6,10 +6,6 @@ import 'database/app_database.dart';
 
 void main() {
   runApp(const BytebankApp());
-  /*save(Contact(0, 'alex', 1000)).then((id) {
-    findAll().then((contacts) => debugPrint(contacts.toString()));
-  });*/
-  findAll().then((value) => debugPrint(value.toString()+"\n\r"));
 }
 
 class BytebankApp extends StatelessWidget {
@@ -18,11 +14,8 @@ class BytebankApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       theme: ThemeData(
-
         primaryColor: Colors.green[900],
-
         buttonTheme: ButtonThemeData(
           buttonColor: Colors.blueAccent[700],
           textTheme: ButtonTextTheme.primary,
@@ -35,6 +28,3 @@ class BytebankApp extends StatelessWidget {
     );
   }
 }
-
-
-
