@@ -7,7 +7,7 @@ class Editor extends StatelessWidget {
   final IconData? icone;
   final TextInputType? textInputType;
 
-  Editor({this.controller, this.labelText, this.hintText, this.icone, this.textInputType});
+  const Editor({Key? key, this.controller, this.labelText, this.hintText, this.icone, this.textInputType}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class Editor extends StatelessWidget {
           labelText: labelText,
           hintText: hintText,
         ),
-        keyboardType: textInputType != null? textInputType : TextInputType.number,
+        keyboardType: textInputType ?? TextInputType.number,
       ),
     );
   }

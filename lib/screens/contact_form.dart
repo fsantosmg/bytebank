@@ -12,7 +12,7 @@ const _labelConta = 'Número da conta';
 class ContactForm extends StatefulWidget {
 
 
-  ContactForm({Key? key}) : super(key: key);
+  const ContactForm({Key? key}) : super(key: key);
 
   @override
   State<ContactForm> createState() => _ContactFormState();
